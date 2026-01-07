@@ -33,5 +33,7 @@ You’re ready to dive in! Head to the next page to install and initialize Servi
 :hidden:
 
 install.md
+type.md
+
 ```
 
