@@ -1,0 +1,16 @@
+[project]
+name = "15Min_Hist"
+description = "Documentation repository that is designed to enable new users of ServiceX to generate a histogram within the first 15 minutes of use."
+readme = "README.md"
+authors = [{ name = "R. Janusiak (IRIS-HEP/UW Seattle)", email = "rogerja@uw.edu" }]
+maintainers = [
+    { name = "Roger Janusiak (IRIS-HEP/UW Seattle)", email = "rogerja@uw.edu" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "sphinx",
+    "furo",
+    "myst",
+    "myst_parser",
+]
