@@ -21,3 +21,5 @@ jobs:
       run: pip install myst_parser
     - id: deployment
       uses: sphinx-notes/pages@v3
+      with:
+        source-dir: source
