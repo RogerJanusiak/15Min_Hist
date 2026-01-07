@@ -3,6 +3,7 @@ name: Deploy Sphinx documentation to Pages
 on:
   push:
     branches: [main] # branch to trigger deployment
+  workflow_dispatch:
 
 jobs:
   pages:
@@ -14,7 +15,9 @@ jobs:
       pages: write
       id-token: write
     steps:
+    - name: Install Furo theme
+      run: pip install furo
     - name: pip install parser
-      run: pip install myst_parser furo markdown-it
+      run: pip install myst_parser
     - id: deployment
       uses: sphinx-notes/pages@v3
