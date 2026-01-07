@@ -9,10 +9,4 @@ maintainers = [
 ]
 license = { text = "MIT" }
 requires-python = ">=3.9"
-dependencies = [
-    "Sphinx>=7,<9",    
-    "furo",
-    "myst-parser>=4,<5", 
-    "markdown-it-py~=3.0",
-    "pyyaml"
-]
+dependencies = []
