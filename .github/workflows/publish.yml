@@ -15,6 +15,6 @@ jobs:
       id-token: write
     steps:
     - name: pip install parser
-      run: pip install myst_parser
+      run: pip install myst_parser furo markdown-it-py
     - id: deployment
       uses: sphinx-notes/pages@v3
