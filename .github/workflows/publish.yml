@@ -18,6 +18,6 @@ jobs:
     - name: Install Furo theme
       run: pip install furo
     - name: pip install parser
-      run: pip install myst_parser
+      run: pip install myst_parser "Sphinx>=7,<9"
     - id: deployment
       uses: sphinx-notes/pages@v3
