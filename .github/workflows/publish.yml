@@ -19,11 +19,11 @@ jobs:
       run: pip install furo
     - name: pip install parser
       run: pip install myst_parser "Sphinx>=7,<9"
-    - name: Build documentation
-      run: cd docs && sphinx-build -b html -a -E -v . _build/html
+    - name: Build Sphinx documentation
+      run: sphinx-build -b html source build/html
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: docs/_build/html
+        path: build/html
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
